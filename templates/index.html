@@ -3,33 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <title>ML API</title>
+  <style>
+    body{
+        box-sizing: border-box;
+        background: rgb(10, 175, 180);
+    }
+       .h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+       }
+.form{
+    width: 300px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Style the input fields */
+.form input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Style the submit button */
+.form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Apply styles to the result heading */
+h2 {
+    margin-top: 20px;
+}
+   </style>
 
 </head>
 
 <body>
- <div class="login">
-	<h1>Diabetes Prediction</h1>
+
+    <div class="h1"><h1>Diabetes Prediction</h1></div>
+    <div class="form">
     <form action="/" method="post">
-      <input type="text" name="Pregnancies" placeholder="Pregnancies" required="required" /><br>
-    	<input type="text" name="Glucose" placeholder="Glucose" required="required" /><br>
-        <input type="text" name="BloodPressure" placeholder="BloodPressure" required="required" /><br>
-        <input type="text" name="SkinThickness" placeholder="SkinThickness" required="required" /><br>
-        <input type="text" name="Insulin" placeholder="Insulin" required="required" /><br>
-        <input type="text" name="BMI" placeholder="BMI" required="required" /><br>
-        <input type="text" name="DiabetesPedigreeFunction" placeholder="DiabetesPedigreeFunction" required="required" /><br>
-        <input type="text" name="Age" placeholder="Age" required="required" /><br>
-
-
+      
+      <div> <input type="text" name="Pregnancies" placeholder="Pregnancies" required="required" /></div>
+      <div><input type="text" name="Glucose" placeholder="Glucose" required="required" /> </div>
+      <div><input type="text" name="BloodPressure" placeholder="BloodPressure" required="required" /></div>
+      <div><input type="text" name="SkinThickness" placeholder="SkinThickness" required="required" /></div>
+      <div> <input type="text" name="Insulin" placeholder="Insulin" required="required" /></div>
+      <div> <input type="text" name="BMI" placeholder="BMI" required="required" /></div>
+      <div>  <input type="text" name="DiabetesPedigreeFunction" placeholder="DiabetesPedigreeFunction" required="required" /></div>
+      <div>  <input type="text" name="Age" placeholder="Age" required="required" /></div>
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
 <body>
 
-   <br>
-   <br>
+
 
 
  </div>
- <h1>The person is {{result}}</h1>
+<div class="h1"><h1>The person is {{result}}</h1></div> 
 
 </body>
 </html>
