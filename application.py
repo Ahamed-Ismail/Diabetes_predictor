@@ -11,7 +11,7 @@ app=application
 
 #importing model
 scaler=pickle.load(open("models/scaler.pkl", "rb"))
-model = pickle.load(open("models/log_reg.pkl", "rb"))
+model = pickle.load(open("models/DecisionTree.pkl", "rb"))   #has the best accuracy
 
 @app.route('/', methods=['POST','GET'])
 def home():
